@@ -4,6 +4,9 @@ import { normalizeImageUrlInput } from "@/lib/image-utils";
 import { NextRequest, NextResponse } from "next/server";
 import { ZodError } from "zod";
 
+export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
+
 function getPrismaErrorCode(error: unknown): string | undefined {
   if (
     typeof error === "object" &&

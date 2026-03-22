@@ -4,6 +4,9 @@ import { updateOrderStatusSchema } from "@/lib/validations/order";
 import { NextRequest, NextResponse } from "next/server";
 import { ZodError } from "zod";
 
+export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
+
 export async function GET(
   request: NextRequest,
   { params }: { params: Promise<{ id: string }> }

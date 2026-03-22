@@ -4,6 +4,9 @@ import { updateCartItemSchema } from "@/lib/validations/cart";
 import { NextRequest, NextResponse } from "next/server";
 import { ZodError } from "zod";
 
+export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
+
 export async function PUT(
   request: NextRequest,
   { params }: { params: Promise<{ id: string }> }

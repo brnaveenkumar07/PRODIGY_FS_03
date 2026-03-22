@@ -5,6 +5,9 @@ import { NextRequest, NextResponse } from "next/server";
 import { Prisma } from "@prisma/client";
 import { ZodError } from "zod";
 
+export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
+
 function getPrismaErrorCode(error: unknown): string | undefined {
   if (
     typeof error === "object" &&
