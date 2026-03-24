@@ -102,3 +102,5 @@ npm run db:reset  # Reset the database
 ## License
 
 This project is for learning, portfolio, and demonstration purposes.
+
+Live Demo: https://ecommerce-naveen.vercel.app/
